@@ -1,7 +1,7 @@
 {
   "name": "@treshugart/nwb",
   "description": "A toolkit for React, Preact & Inferno apps, React libraries and other npm modules for the web, with no configuration (until you need it)",
-  "version": "0.15.6",
+  "version": "0.16.0",
   "license": "MIT",
   "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
   "bin": {
@@ -48,7 +48,6 @@
     "run-series": "1.1.4",
     "semver": "5.3.0",
     "webpack-merge": "2.4.0",
-
     "babel-cli": "6.22.2",
     "babel-core": "6.22.1",
     "babel-plugin-add-module-exports": "0.2.1",
@@ -78,7 +77,6 @@
     "redbox-noreact": "1.1.0",
     "express": "4.14.0",
     "connect-history-api-fallback": "1.3.0",
-
     "karma": "1.4.0",
     "diff": "3.2.0",
     "karma-chrome-launcher": "2.0.0",
@@ -89,14 +87,11 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "2.0.1",
     "phantomjs-prebuilt": "2.1.14",
-
     "mocha": "3.2.0",
     "expect": "1.20.2",
-
     "object-assign": "4.1.1",
     "promise": "7.1.1",
     "whatwg-fetch": "2.0.2",
-
     "webpack": "2.2.0",
     "autoprefixer": "6.7.0",
     "babel-loader": "6.2.10",
@@ -138,12 +133,15 @@
   ],
   "babel": {
     "presets": [
-      ["env", {
-        "loose": true,
-        "targets": {
-          "node": 4
+      [
+        "env",
+        {
+          "loose": true,
+          "targets": {
+            "node": 4
+          }
         }
-      }],
+      ],
       "stage-3"
     ],
     "plugins": [
@@ -152,9 +150,12 @@
     "env": {
       "test": {
         "plugins": [
-          ["istanbul", {
-            "include": "src"
-          }]
+          [
+            "istanbul",
+            {
+              "include": "src"
+            }
+          ]
         ]
       }
     }
