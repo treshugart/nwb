@@ -15,7 +15,6 @@
     "build:watch": "rimraf lib && babel src --watch --out-dir lib",
     "lint": "eslint *.js babel-presets src tests",
     "lint:fix": "npm run lint -- --fix",
-    "postinstall": "npm run build",
     "prepublish": "npm run build",
     "test": "npm run build && cross-env NODE_ENV=test NWB_TEST=true mocha --compilers js:babel-core/register tests/*-test.js tests/commands/*-test.js",
     "test:coverage": "npm run build && cross-env NODE_ENV=test NWB_TEST=true nyc mocha tests/*-test.js tests/commands/*-test.js",
